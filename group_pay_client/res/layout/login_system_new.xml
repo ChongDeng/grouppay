@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff78c3ae"
+    >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView android:text="" />
+            <TextView android:text="" />
+        </TableRow>
+        <TableRow>
+            <TextView android:text="" />
+            <TextView android:text="" />
+        </TableRow>
+        <TableRow>
+            <TextView android:text="" />
+            <TextView android:text="" />
+        </TableRow>
+        <TableRow>
+            <TextView android:text="" />
+            <TextView android:text="" />
+        </TableRow>
+        <TableRow>
+            <TextView android:text="" />
+            <TextView android:text="" />
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="" />
+            <TextView android:text="" />
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="" />
+            <TextView android:text="" />
+        </TableRow>
+
+
+        <TableRow android:layout_marginBottom="5px">
+            <TextView
+                android:text="Name: "
+                android:id="@+id/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff1d7aff"
+                android:textIsSelectable="true"
+                android:textStyle="bold"
+                android:gravity="right" />
+
+            <EditText
+                android:text=""
+                android:id="@+id/userEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff6fff7"
+                android:layout_margin="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginLeft="5px"
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px" />
+        </TableRow>
+
+
+        <TableRow android:layout_marginTop="5px"
+            android:layout_marginBottom="5px"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="5px">
+            <TextView
+                android:text="Password:"
+                android:id="@+id/TextViewPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff1d7aff"
+                android:textStyle="bold"
+                android:gravity="right" />
+
+            <EditText
+                android:text=""
+                android:id="@+id/pwdEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:background="#fff6fff7"
+                android:layout_marginLeft="5px" />
+
+        </TableRow>
+
+        <TableRow
+            android:gravity="right">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20px">
+
+            <Button
+                android:text="Cancel"
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:textStyle="bold"
+                android:textColor="#ffd32127" />
+
+            <Button
+                android:text="Login"
+                android:id="@+id/loginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:textColor="#ffd32127"
+                android:textStyle="bold" />
+        </TableRow>
+        
+        <TextView android:id="@+id/link_to_register" 
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="40dip"
+		  		android:paddingRight="20dip"
+		  		android:paddingTop="100dip"
+		  		android:text="New user? Register here "
+		  		android:gravity="center"
+		  		android:textSize="20dip"
+		  		android:textColor="#ffd32127"/>
+
+    </TableLayout>
+</LinearLayout>

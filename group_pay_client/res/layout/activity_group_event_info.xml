@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+           <TextView
+			        android:id="@+id/textViewEventAbstract"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="Event Info" 
+			        android:gravity = "center_horizontal"
+			        android:textSize="45px"
+			        android:background="#B0C4D2"/>
+			    
+			   
+			    
+			    <LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    
+			         <ImageView android:id="@+id/img1"  
+			        android:layout_width="wrap_content" 
+			        android:layout_height="wrap_content"  
+			        android:layout_margin="5px"
+			        android:src="@drawable/groupname"
+			        /> 
+			        
+			        <TextView
+			        android:id="@+id/textView_event_name"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:textSize="18sp"
+			        android:text="Event name: " />
+			        
+			    </LinearLayout>
+			
+			     <LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    
+			         <ImageView android:id="@+id/img2"  
+			        android:layout_width="wrap_content" 
+			        android:layout_height="wrap_content"  
+			        android:layout_margin="5px"
+			        android:src="@drawable/group_description"
+			        /> 
+			        
+			        
+			         <TextView
+			        android:id="@+id/textView_event_description"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:textSize="18sp"
+			        android:autoLink="web"
+			        android:text="Event description: " />
+			        
+			    </LinearLayout>
+			    
+			      <Button
+		            android:id="@+id/propose_event_button"
+		            android:layout_width="match_parent"	           
+			        android:layout_height="wrap_content" 
+			        android:layout_marginTop="8dp"
+		            android:text="Propose an event" 
+		            android:layout_gravity="center_vertical" ></Button>
+			      
+			       <Button
+		            android:id="@+id/submit_receipt_button"
+		            android:layout_width="match_parent"	           
+			        android:layout_height="wrap_content" 
+			        android:layout_marginTop="8dp"
+		            android:text="Submit cost receipt" 
+		            android:layout_gravity="center_vertical" ></Button>
+			       
+			       <Button
+		            android:id="@+id/treasurer_charge_button"
+		            android:layout_width="match_parent"	           
+			        android:layout_height="wrap_content" 
+			        android:layout_marginTop="8dp"
+		            android:text="Treasurer calculate cost" 
+		            android:layout_gravity="center_vertical" ></Button>
+    
+
+</LinearLayout>

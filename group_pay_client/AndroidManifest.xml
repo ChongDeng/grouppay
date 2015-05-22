@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.group_pay"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.chongdeng.grouppay.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+         
+        <activity android:name="com.chongdeng.grouppay.RegisterActivity"/>
+       
+        <activity android:name="com.chongdeng.grouppay.FriendActivity"/>
+        <activity android:name="com.chongdeng.grouppay.GroupActivity"/>
+        <activity android:name="com.chongdeng.grouppay.MeActivity"/>
+        
+       
+        <activity android:name="com.chongdeng.grouppay.TrendsAcitivy"/>
+        <activity android:name="com.chongdeng.grouppay.MoreActivity"/>
+        <activity android:name="com.chongdeng.grouppay.GroupItemInfoActivity"/>
+        <activity android:name="com.chongdeng.grouppay.JoinGroupActivity"/>
+        <activity android:name="com.chongdeng.grouppay.CreateGroupActivity"/>
+        <activity android:name="com.chongdeng.grouppay.MainTabActivity"/>  
+        
+        <activity android:name="com.chongdeng.grouppay.GroupFundActivity"/>  
+        <activity android:name="com.chongdeng.grouppay.GroupEventInfoActivity"/>  
+        <activity android:name="com.chongdeng.grouppay.EventProposeActivity"/> 
+        <activity android:name="com.chongdeng.grouppay.ReportExpenseActivity"/>  
+        
+        
+    </application>
+
+</manifest>

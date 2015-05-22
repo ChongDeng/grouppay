@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff78c3ae"
+    >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:paddingTop="200dp">
+
+       
+
+        <TableRow android:layout_marginBottom="5px">
+            <TextView
+                android:text="Event Name: "
+                android:id="@+id/TextViewEventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff1d7aff"
+                android:textIsSelectable="true"
+                android:textStyle="bold"
+                android:gravity="right" />
+
+            <EditText
+                android:text=""
+                android:id="@+id/eventnameEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff6fff7"
+                android:layout_margin="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginLeft="5px"
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px" />
+        </TableRow>
+
+
+        <TableRow android:layout_marginTop="5px"
+            android:layout_marginBottom="5px"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="5px">
+            <TextView
+                android:text="Event Description"
+                android:id="@+id/TextViewEventDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff1d7aff"
+                android:textStyle="bold"
+                android:gravity="right" />
+
+            <EditText
+                android:text=""
+                android:id="@+id/eventdescEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               
+                android:background="#fff6fff7"
+                android:layout_marginLeft="5px" />
+
+        </TableRow>
+        
+         <TextView
+			        android:id="@+id/textViewFundDonate"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="8dp"
+			        android:text="How the cost is expensed" 
+			        android:gravity = "center_horizontal"
+			        android:textSize="30px"
+			        android:background="#B0C4D2"/>
+         
+        </TableLayout>
+        
+    <Spinner 
+										android:id="@+id/cost_strategy_list" 
+										android:layout_width="fill_parent" 
+										android:layout_height="wrap_content"></Spinner>
+    
+         <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        android:stretchColumns="0">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20px">
+
+            <Button
+                android:text="Cancel"
+                android:id="@+id/EventCancelButton"
+                android:layout_width="0dp"
+			    android:layout_weight="1"
+	            android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#ffd32127" />
+
+            <Button
+                android:text="Submit"
+                android:id="@+id/EventSubmitButton"
+                android:layout_width="0dp"
+			    android:layout_weight="1"
+	            android:layout_height="wrap_content"
+                android:textColor="#ffd32127"
+                android:textStyle="bold" />
+        </TableRow>      
+    </TableLayout>
+</LinearLayout>

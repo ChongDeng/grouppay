@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <TableLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:stretchColumns="0">
+		<TableRow>
+					           
+			 <Button
+	            android:id="@+id/AddGroupButton"
+	            android:drawableLeft="@drawable/create_group"
+	            android:layout_width="0dp"
+			    android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text="Create" />
+        
+            <Button
+	            android:id="@+id/RefreshGroupButton"
+	            android:drawableLeft="@drawable/refresh"
+	            android:text="Refresh"
+	            android:layout_width="0dp"
+				android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            />
+		  </TableRow>
+	</TableLayout> 
+    
+    <ListView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/listView"
+    />
+
+</LinearLayout>

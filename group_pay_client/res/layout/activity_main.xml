@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<TabHost   
+    android:id="@android:id/tabhost"   
+    android:layout_width="fill_parent"   
+    android:layout_height="fill_parent" 
+    xmlns:android="http://schemas.android.com/apk/res/android">  
+      
+    <LinearLayout   
+        android:orientation="vertical"   
+        android:layout_width="fill_parent"   
+        android:layout_height="fill_parent">  
+        <FrameLayout   
+            android:id="@android:id/tabcontent"   
+            android:layout_width="fill_parent"   
+            android:layout_height="30dip"   
+            android:layout_weight="1.0" />  
+        <TabWidget   
+            android:id="@android:id/tabs"   
+            android:visibility="gone"   
+            android:layout_width="fill_parent"   
+            android:layout_height="wrap_content"   
+            android:layout_weight="0.0" />  
+        <RadioGroup   
+	        android:id="@+id/main_radiogroup"  
+	        android:gravity="center_vertical"  
+	        android:layout_gravity="bottom"   
+	        android:orientation="horizontal"  
+	        android:paddingBottom="1dip"
+	        android:paddingTop="1dp"  
+	        android:background="@drawable/tabbar_bg_nor"  
+	        android:layout_width="fill_parent"   
+	        android:layout_height="wrap_content">  
+            <RadioButton   
+                android:id="@+id/tab_recent"   
+                android:checked="true"   
+                android:text="Friend" 
+                android:textColor="@color/tab_text"
+                android:background="@drawable/tabbar_bg_selector"
+                android:drawableTop="@drawable/tab_recent_selector"
+                android:layout_weight="1"
+                />      
+            <RadioButton   
+                android:id="@+id/tab_buddy" 
+                android:text="Group"
+                android:textColor="@color/tab_text"
+                android:background="@drawable/tabbar_bg_selector"
+                android:drawableTop="@drawable/tab_buddy_selector"   
+                android:layout_weight="1"
+                />  
+            <RadioButton   
+                android:id="@+id/tab_group"   
+                android:text="Me" 
+                android:textColor="@color/tab_text"
+                android:background="@drawable/tabbar_bg_selector"
+                android:drawableTop="@drawable/tab_group_selector"
+                android:layout_weight="1"  
+                 />  
+            <RadioButton   
+                android:id="@+id/tab_trends"   
+                android:text="More" 
+                android:textColor="@color/tab_text"
+                android:background="@drawable/tabbar_bg_selector"
+                android:drawableTop="@drawable/tab_qzone_selector"  
+                android:layout_weight="1" 
+                />    
+             
+            
+        </RadioGroup>     
+    </LinearLayout>  
+</TabHost>  
